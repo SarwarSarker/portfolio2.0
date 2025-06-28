@@ -1,23 +1,31 @@
 import React from "react";
 import Image from "next/image";
-import { FaCode, FaNodeJs, FaReact } from "react-icons/fa6";
-import { RiGraduationCapLine, RiNextjsFill } from "react-icons/ri";
+import { FaCode } from "react-icons/fa6";
+import { RiGraduationCapLine } from "react-icons/ri";
 import { FaProjectDiagram } from "react-icons/fa";
-import { TbBrandJavascript, TbBrandTailwind, TbBrandTypescript } from "react-icons/tb";
-import { SiExpress } from "react-icons/si";
+import { TbBrandTailwind } from "react-icons/tb";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiExpress as SiExpressColor,
+} from "react-icons/si";
+import Link from "next/link";
 
 const About: React.FC = () => {
   return (
-    <section className="py-20 bg-white dark:bg-gray-900">
+    <section id="about" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
+          <p className="text-lg mb-2 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            Introduction
+          </p>
+
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
             About Me
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Passionate frontend developer with 2.5+ years of experience creating
-            modern, responsive web applications that users love.
-          </p>
         </div>
         <div className="max-w-6xl mx-auto w-full flex flex-col lg:flex-row gap-20 items-center">
           {/* Profile Image */}
@@ -34,11 +42,11 @@ const About: React.FC = () => {
           <div className="flex-1">
             <div>
               <p className="text-lg text-gray-700 dark:text-gray-200 mb-8 text-center lg:text-left">
-                I&apos;m a frontend developer with 3 years of experience,
-                passionate about turning complex problems into clean,
-                user-friendly designs. I specialize in React, TypeScript, and
-                modern CSS, with a focus on writing maintainable code and
-                crafting great user experiences.
+                I&apos;m a software engineer with 2.5+ years of experience,
+                passionate about building scalable applications and innovative
+                solutions across the full stack. I specialize in React,
+                TypeScript, and modern technologies, with a focus on writing
+                maintainable code and crafting great user experiences.
               </p>
             </div>
 
@@ -47,7 +55,8 @@ const About: React.FC = () => {
                 <FaCode className="w-8 h-8" />
                 <div className="mb-2 text-xl font-semibold">Languages</div>
                 <div className="text-gray-700 dark:text-gray-300 text-base">
-                  JavaScript, TypeScript, ReactJs, NextJs, NodeJs, ExpressJs, SQL
+                  JavaScript, TypeScript, ReactJs, NextJs, NodeJs, ExpressJs,
+                  SQL
                 </div>
               </div>
               <div className="flex flex-col gap-3 border border-gray-400 dark:border-gray-700 rounded-xl p-6 shadow-sm">
@@ -73,44 +82,44 @@ const About: React.FC = () => {
               </p>
 
               <div className="flex gap-4 mb-8">
-              <div className="relative group p-3 rounded-lg border border-gray-400 dark:border-gray-700 cursor-pointer">
-                  <TbBrandTailwind className="w-8 h-8" />
+                <div className="relative group p-3 rounded-lg border border-gray-400 dark:border-gray-700 cursor-pointer">
+                  <TbBrandTailwind className="w-8 h-8 text-cyan-500" />
                   <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 px-3 py-1 rounded bg-gray-800 text-white text-xs opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">
                     Tailwind CSS
                   </span>
                 </div>
                 <div className="relative group p-3 rounded-lg border border-gray-400 dark:border-gray-700 cursor-pointer">
-                  <TbBrandJavascript className="w-8 h-8" />
+                  <SiJavascript className="w-8 h-8 text-yellow-400" />
                   <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 px-3 py-1 rounded bg-gray-800 text-white text-xs opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">
                     JavaScript
                   </span>
                 </div>
                 <div className="relative group p-3 rounded-lg border border-gray-400 dark:border-gray-700 cursor-pointer">
-                  <TbBrandTypescript className="w-8 h-8" />
+                  <SiTypescript className="w-8 h-8 text-blue-600" />
                   <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 px-3 py-1 rounded bg-gray-800 text-white text-xs opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">
                     TypeScript
                   </span>
                 </div>
                 <div className="relative group p-3 rounded-lg border border-gray-400 dark:border-gray-700 cursor-pointer">
-                  <FaReact className="w-8 h-8" />
+                  <SiReact className="w-8 h-8 text-blue-500" />
                   <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 px-3 py-1 rounded bg-gray-800 text-white text-xs opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">
                     React
                   </span>
                 </div>
                 <div className="relative group p-3 rounded-lg border border-gray-400 dark:border-gray-700 cursor-pointer">
-                  <RiNextjsFill className="w-8 h-8" />
+                  <SiNextdotjs className="w-8 h-8 text-black dark:text-white" />
                   <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 px-3 py-1 rounded bg-gray-800 text-white text-xs opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">
                     Next.js
                   </span>
                 </div>
                 <div className="relative group p-3 rounded-lg border border-gray-400 dark:border-gray-700 cursor-pointer">
-                  <FaNodeJs className="w-8 h-8" />
+                  <SiNodedotjs className="w-8 h-8 text-green-600" />
                   <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 px-3 py-1 rounded bg-gray-800 text-white text-xs opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">
                     Node.js
                   </span>
                 </div>
                 <div className="relative group p-3 rounded-lg border border-gray-400 dark:border-gray-700 cursor-pointer">
-                  <SiExpress className="w-8 h-8" />
+                  <SiExpressColor className="w-8 h-8 text-gray-800 dark:text-gray-200" />
                   <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 px-3 py-1 rounded bg-gray-800 text-white text-xs opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">
                     Express.js
                   </span>
@@ -119,10 +128,13 @@ const About: React.FC = () => {
             </div>
 
             <div className="flex justify-center">
-              <button className="flex items-center gap-2 border rounded-full px-8 py-3 text-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+              <Link
+                href="#"
+                className="flex items-center justify-center w-full gap-2 border rounded-full px-8 py-3 mt-5 text-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+              >
                 My Story & Tech Stack
                 <span>→</span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

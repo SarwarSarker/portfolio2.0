@@ -1,5 +1,6 @@
 "use client"
 
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { RiMenu3Line } from 'react-icons/ri';
 import { RxCross2 } from 'react-icons/rx';
@@ -28,8 +29,8 @@ const Header: React.FC = () => {
   const navItems = [
     { label: 'Home', id: 'hero' },
     { label: 'About', id: 'about' },
-    { label: 'Skills', id: 'skills' },
-    { label: 'Projects', id: 'projects' },
+    // { label: 'Skills', id: 'skills' },
+    { label: 'Projects', id: 'project' },
     { label: 'Experience', id: 'experience' },
     { label: 'Contact', id: 'contact' },
   ];
@@ -51,13 +52,13 @@ const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <button
+              <Link
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium"
+                href={`#${item.id}`}
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:border-b-2 hover:border-blue-600 dark:hover:text-blue-400 transition-colors duration-200 cursor-pointer font-medium"
               >
                 {item.label}
-              </button>
+              </Link>
             ))}
           </div>
 

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { FiChevronDown, FiGithub, FiLinkedin } from "react-icons/fi";
 import { SiLeetcode } from "react-icons/si";
@@ -25,28 +26,28 @@ const Hero: React.FC = () => {
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-6">
             <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent animate-fade-in">
-              Frontend Developer
+              Software Engineer
             </h1>
             <div className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 animate-fade-in-delay">
               <span className="block mb-2">
                 Hi, I&apos;m
-                <span className="font-semibold text-blue-600 dark:text-blue-400">
+                <span className="font-semibold text-blue-600 dark:text-blue-400 ml-1">
                   Sarwar Sarker
                 </span>
               </span>
               <span className="block">
-                Crafting beautiful, responsive web experiences for 2.5+ years
+                Building scalable software solutions and innovative applications with modern technologies
               </span>
             </div>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in-delay-2">
-            <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 hover:from-blue-700 hover:to-purple-700">
+            <Link href="#project" className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 hover:from-blue-700 hover:to-purple-700 cursor-pointer">
               View My Work
-            </button>
-            <button className="px-8 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full font-semibold hover:border-blue-600 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200">
+            </Link>
+            <a href="/resume.pdf" download className="px-8 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full font-semibold hover:border-blue-600 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 cursor-pointer">
               Download Resume
-            </button>
+            </a>
           </div>
 
           <div className="flex items-center justify-center space-x-6 mb-16 animate-fade-in-delay-3">
