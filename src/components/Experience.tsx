@@ -65,7 +65,7 @@ const Experience: React.FC = () => {
               Experience
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              My professional journey in frontend development
+              My professional journey in software development
             </p>
           </div>
 
