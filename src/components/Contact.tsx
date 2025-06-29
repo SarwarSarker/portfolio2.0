@@ -203,6 +203,7 @@ const Contact: React.FC = () => {
 
                 <button
                   type="submit"
+                  disabled={true}
                   className="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center space-x-2"
                 >
                   <FiSend className="w-6 h-6" />

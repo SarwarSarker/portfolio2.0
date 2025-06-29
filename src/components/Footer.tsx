@@ -1,5 +1,5 @@
-import React from 'react';
-import { FiHeart } from 'react-icons/fi';
+import React from "react";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -8,21 +8,31 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-6">
         <div className="text-center">
-          <div className="mb-6">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Alex Johnson
-            </h3>
-            <p className="text-gray-400 mt-2">Frontend Developer</p>
-          </div>
-          
           <div className="flex items-center justify-center space-x-2 text-gray-400">
-            <span>© {currentYear} Made with</span>
-            <FiHeart className="w-8 h-8 text-red-500 fill-current" />
-            <span>by Alex Johnson. All rights reserved.</span>
+            <span>© {currentYear}</span>
+            <span>Sarwar Sarker. All rights reserved.</span>
           </div>
-          
-          <div className="mt-4 text-sm text-gray-500">
-            <p>Designed and developed with modern web technologies</p>
+
+          <div className="flex items-center justify-center space-x-2 mt-4 text-sm text-gray-500">
+            <p>Connect with me on | </p>
+            <div className="flex items-center justify-center space-x-2">
+              <a
+                href="https://www.linkedin.com/in/sarwar-sarker/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-blue-600 underline"
+              >
+                Linkedin
+              </a>
+              <a
+                href="https://github.com/sarwar-sarker"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-blue-600 underline"
+              >
+                Github
+              </a>
+            </div>
           </div>
         </div>
       </div>
