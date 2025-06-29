@@ -1,5 +1,4 @@
 import React from "react";
-import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
