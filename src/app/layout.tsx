@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { Pacifico, Ovo } from "next/font/google";
 import "./globals.css";
 
-export const pacifico = Pacifico({
+const pacifico = Pacifico({
   subsets: ["latin"],
   variable: "--font-pacifico",
   weight: "400",
 });
 
-export const ovo = Ovo({
+const ovo = Ovo({
   subsets: ["latin"],
   variable: "--font-ovo",
   weight: "400",
