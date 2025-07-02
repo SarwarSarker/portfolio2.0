@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
             <Link href="#project" className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 hover:from-blue-700 hover:to-purple-700 cursor-pointer">
               View My Work
             </Link>
-            <a href="/resume.pdf" download className="px-8 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full font-semibold hover:border-blue-600 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 cursor-pointer">
+            <a href="/cv_sarwar_sarker.pdf" download className="px-8 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full font-semibold hover:border-blue-600 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 cursor-pointer">
               Download Resume
             </a>
           </div>
