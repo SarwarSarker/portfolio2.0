@@ -36,95 +36,97 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 bg-white dark:bg-gray-900">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
+          <div className="text-center mb-10 sm:mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-gray-900 dark:text-white">
               Get In Touch
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Let&apos;s discuss your next project or just say hello!
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
             {/* Contact Information */}
             <div>
-              <h3 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-gray-900 dark:text-white">
                 Let&apos;s Connect
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-8 text-lg leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 text-base sm:text-lg leading-relaxed">
                 I&apos;m always interested in new opportunities and exciting
                 Whether you&apos;re a company looking for a developer or a
                 fellow developer wanting to collaborate, I&apos;d love to hear
                 from you.
               </p>
 
-              <div className="space-y-6 mb-8">
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg">
-                    <FiMail className="w-6 h-6" />
+              <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
+                <div className="flex items-center space-x-3 sm:space-x-4">
+                  <div className="p-2.5 sm:p-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg flex-shrink-0">
+                    <FiMail className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm sm:text-base">
                       Email
                     </h4>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-600 dark:text-gray-300 text-xs sm:text-sm break-all">
                       sarwarsarker00@gmail.com
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg">
-                    <FiPhone className="w-6 h-6" />
+                <div className="flex items-center space-x-3 sm:space-x-4">
+                  <div className="p-2.5 sm:p-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg flex-shrink-0">
+                    <FiPhone className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm sm:text-base">
                       Phone
                     </h4>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-600 dark:text-gray-300 text-xs sm:text-sm">
                       +8801836462147
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg">
-                    <FiMapPin className="w-6 h-6" />
+                <div className="flex items-center space-x-3 sm:space-x-4">
+                  <div className="p-2.5 sm:p-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg flex-shrink-0">
+                    <FiMapPin className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">
+                    <h4 className="font-semibold text-gray-900 dark:text-white text-sm sm:text-base">
                       Location
                     </h4>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-600 dark:text-gray-300 text-xs sm:text-sm">
                       Dhaka, Bangladesh
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="flex space-x-4">
+              <div className="flex space-x-3 sm:space-x-4">
                 <a
                   href="https://github.com/sarwarsarker"
-                  className="p-3 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white transition-all duration-200 transform hover:scale-110"
+                  className="p-2.5 sm:p-3 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white transition-all duration-200 transform hover:scale-110"
+                  aria-label="GitHub"
                 >
-                  <FiGithub className="w-6 h-6" />
+                  <FiGithub className="w-5 h-5 sm:w-6 sm:h-6" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/sarwar-sarker/"
-                  className="p-3 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white transition-all duration-200 transform hover:scale-110"
+                  className="p-2.5 sm:p-3 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white transition-all duration-200 transform hover:scale-110"
+                  aria-label="LinkedIn"
                 >
-                  <FiLinkedin className="w-6 h-6" />
+                  <FiLinkedin className="w-5 h-5 sm:w-6 sm:h-6" />
                 </a>
               </div>
             </div>
 
             {/* Contact Form */}
-            <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 dark:bg-gray-800 p-5 sm:p-6 md:p-8 rounded-xl">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div>
                     <label
                       htmlFor="name"
@@ -139,7 +141,7 @@ const Contact: React.FC = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-all duration-200"
+                      className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-all duration-200 text-sm sm:text-base"
                       placeholder="Your name"
                     />
                   </div>
@@ -157,7 +159,7 @@ const Contact: React.FC = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-all duration-200"
+                      className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-all duration-200 text-sm sm:text-base"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -177,7 +179,7 @@ const Contact: React.FC = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-all duration-200"
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-all duration-200 text-sm sm:text-base"
                     placeholder="What's this about?"
                   />
                 </div>
@@ -195,8 +197,8 @@ const Contact: React.FC = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    rows={6}
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-all duration-200 resize-none"
+                    rows={5}
+                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-all duration-200 resize-none text-sm sm:text-base"
                     placeholder="Tell me about your project..."
                   ></textarea>
                 </div>
@@ -204,9 +206,9 @@ const Contact: React.FC = () => {
                 <button
                   type="submit"
                   disabled={true}
-                  className="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center space-x-2"
+                  className="w-full px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center justify-center space-x-2 text-sm sm:text-base"
                 >
-                  <FiSend className="w-6 h-6" />
+                  <FiSend className="w-5 h-5 sm:w-6 sm:h-6" />
                   <span>Send Message</span>
                 </button>
               </form>

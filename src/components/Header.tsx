@@ -43,45 +43,46 @@ const Header: React.FC = () => {
           : 'bg-transparent'
       }`}
     >
-      <nav className="container mx-auto max-w-6xl px-6 py-4">
+      <nav className="container mx-auto max-w-6xl px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-pacifico font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <div className="text-xl sm:text-2xl font-pacifico font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Sarwar.
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.id}
                 href={`#${item.id}`}
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:border-b-2 hover:border-blue-600 dark:hover:text-blue-400 transition-colors duration-200 cursor-pointer font-medium"
+                className="text-sm sm:text-base text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:border-b-2 hover:border-blue-600 dark:hover:text-blue-400 transition-colors duration-200 cursor-pointer font-medium"
               >
                 {item.label}
               </Link>
             ))}
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3 sm:space-x-4">
 
             {/* Mobile Menu Button */}
             <button
               className="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle menu"
             >
-              {isMobileMenuOpen ? <RxCross2 className='w-8 h-8' /> : <RiMenu3Line className='w-8 h-8' />}
+              {isMobileMenuOpen ? <RxCross2 className='w-6 h-6 sm:w-8 sm:h-8' /> : <RiMenu3Line className='w-6 h-6 sm:w-8 sm:h-8' />}
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+          <div className="md:hidden mt-3 sm:mt-4 py-3 sm:py-4 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200"
+                className="block w-full text-left px-3 sm:px-4 py-2 sm:py-2.5 text-sm sm:text-base text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200"
               >
                 {item.label}
               </button>
