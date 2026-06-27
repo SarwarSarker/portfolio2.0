@@ -11,6 +11,9 @@ const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    // Check initial scroll position on mount
+    setIsScrolled(window.scrollY > 20);
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };

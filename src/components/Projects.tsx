@@ -24,22 +24,21 @@ const Projects: React.FC = () => {
       featured: true,
     },
     {
-      title: "Jante Chai",
+      title: "Xoshplay",
       description:
-        "A multimedia storytelling platform where users can listen to stories, audio, and video content. Users can submit their own stories and access AI-powered horoscope readings and love match compatibility features.",
-      image: "/images/jante_chai.png",
+        "Xoshplay is a mobile gaming platform that provides unlimited access to a variety of online HTML5 games, allowing users to play instantly on their smartphones without downloads",
+      image: "/images/xoshplay.png",
       technologies: [
         "Next.js",
         "React",
         "TypeScript",
         "Tailwind CSS",
-        "Chart.js",
         "REST API",
         "MySQL",
         "Express",
         "Node.js",
       ],
-      liveUrl: "https://jante-chai.com/",
+      liveUrl: "https://xoshplay.com/",
       featured: true,
     },
     {
@@ -80,24 +79,6 @@ const Projects: React.FC = () => {
         "MongoDB",
       ],
       liveUrl: "https://findestate.netlify.app/",
-      featured: false,
-    },
-    {
-      title: "Ecommerce App",
-      description:
-        "An e-commerce website where users can browse and purchase products, add items to their cart, and checkout securely.",
-      image: "/images/ecom.png",
-      technologies: [
-        "Html",
-        "CSS",
-        "Tailwind CSS",
-        "Reactjs",
-        "Redux",
-        "Redux-Toolkit",
-        "React Fomilk",
-        "Firebase",
-      ],
-      liveUrl: "https://ecommerce-f3eea.web.app/",
       featured: false,
     },
     {
