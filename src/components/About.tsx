@@ -16,7 +16,10 @@ import Link from "next/link";
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-12 sm:py-16 md:py-20 bg-white dark:bg-gray-900">
+    <section
+      id="about"
+      className="py-12 sm:py-16 md:py-20 bg-white dark:bg-gray-900"
+    >
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <p className="text-base sm:text-lg mb-2 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
@@ -42,18 +45,22 @@ const About: React.FC = () => {
           <div className="flex-1 w-full">
             <div>
               <p className="text-base sm:text-lg text-gray-700 dark:text-gray-200 mb-6 sm:mb-8 text-center lg:text-left">
-                I&apos;m a software engineer with 2.5+ years of experience,
-                passionate about building scalable applications and innovative
-                solutions across the full stack. I specialize in React,
-                TypeScript, and modern technologies, with a focus on writing
-                maintainable code and crafting great user experiences.
+                Full-Stack Software Engineer with 4+ years of experience
+                designing and developing scalable web applications. Experienced
+                in React, Next.js, TypeScript, Node.js, and modern development
+                practices, with a passion for building reliable, maintainable,
+                and user-centric products. Committed to writing clean, efficient
+                code and delivering high-quality software that drives business
+                value.
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
               <div className="flex flex-col gap-2 sm:gap-3 border border-gray-400 dark:border-gray-700 rounded-xl p-4 sm:p-6 shadow-sm">
                 <FaCode className="w-6 h-6 sm:w-8 sm:h-8" />
-                <div className="mb-1 sm:mb-2 text-lg sm:text-xl font-semibold">Languages</div>
+                <div className="mb-1 sm:mb-2 text-lg sm:text-xl font-semibold">
+                  Languages
+                </div>
                 <div className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                   JavaScript, TypeScript, ReactJs, NextJs, NodeJs, ExpressJs,
                   SQL
@@ -61,7 +68,9 @@ const About: React.FC = () => {
               </div>
               <div className="flex flex-col gap-2 sm:gap-3 border border-gray-400 dark:border-gray-700 rounded-xl p-4 sm:p-6 shadow-sm">
                 <RiGraduationCapLine className="w-6 h-6 sm:w-8 sm:h-8" />
-                <div className="mb-1 sm:mb-2 text-lg sm:text-xl font-semibold">Education</div>
+                <div className="mb-1 sm:mb-2 text-lg sm:text-xl font-semibold">
+                  Education
+                </div>
                 <div className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                   BSc in Computer Science and Engineering, Daffodil
                   International University
@@ -69,9 +78,12 @@ const About: React.FC = () => {
               </div>
               <div className="flex flex-col gap-2 sm:gap-3 border border-gray-400 dark:border-gray-700 rounded-xl p-4 sm:p-6 shadow-sm sm:col-span-2 lg:col-span-1">
                 <FaProjectDiagram className="w-6 h-6 sm:w-8 sm:h-8" />
-                <div className="mb-1 sm:mb-2 text-lg sm:text-xl font-semibold">Projects</div>
+                <div className="mb-1 sm:mb-2 text-lg sm:text-xl font-semibold">
+                  Projects
+                </div>
                 <div className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
-                  Built 5+ projects, including some industrial projects
+                  Delivered 10+ web applications, including enterprise
+                  solutions, CMS platforms, and payment-integrated systems.
                 </div>
               </div>
             </div>
