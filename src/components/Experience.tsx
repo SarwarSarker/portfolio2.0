@@ -4,20 +4,22 @@ import { FiCalendar, FiMapPin } from "react-icons/fi";
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: "Software Engineer (ReactJs)",
+      title: "Software Engineer",
       company: "MoMagic Bangladesh Limited",
       location: "Dhaka, Bangladesh",
       period: "May 2024 - Present",
       description:
         "Developed full-stack web applications using React, TypeScript, and modern development practices.",
       achievements: [
-        "Built and maintained scalable frontend architectures using React.js and Next.js frameworks with performance optimization.",
-        "Designed and implemented RESTful APIs endpoints for seamless data exchange between frontend and backend services.",
-        "Developed content management system (CMS) features using React.js with Redux state management for complex data flows.",
-        "Optimized application performance and SEO through Next.js server-side rendering (SSR) and static site generation (SSG).",
-        "Engineered secure authentication systems including OTP-based login functionality with mobile number verification. Integrated third-party payment gateways and Direct Carrier Billing (DCB) systems to enhance user payment experience.",
-        "Implemented modern API management using RTK Query for efficient data fetching, caching, and state synchronization.",
-        "Enhanced user experience through advanced animations and micro-interactions using Framer Motion library.",
+        " Built and maintained scalable frontend applications using React.js, Next.js, TypeScript, and Redux Toolkit with performance optimization.",
+        "Developed and maintained RESTful APIs using Node.js, Express.js, and TypeScript for seamless communication between frontend and backend services.",
+        "Designed and implemented CMS features with complex state management using Redux Toolkit and RTK Query.",
+        "Optimized application performance and SEO using Next.js Server-Side Rendering (SSR) and Static Site Generation (SSG).",
+        "Implemented secure authentication using JWT, OTP verification, and role-based authorization.",
+        "Designed and optimized relational database schemas, wrote efficient SQL queries, and improved backend performance through query optimization.",
+        "Integrated third-party services including payment gateways, Direct Carrier Billing (DCB), and SMS providers.",
+        "Implemented API caching, centralized error handling, request validation, and logging to improve application reliability.",
+        "Enhanced user experience through responsive UI, animations, and micro-interactions using Framer Motion.",
       ],
       technologies: [
         "React",
@@ -57,7 +59,10 @@ const Experience: React.FC = () => {
   ];
 
   return (
-    <section id="experience" className="py-12 sm:py-16 md:py-20 bg-gray-50 dark:bg-gray-800">
+    <section
+      id="experience"
+      className="py-12 sm:py-16 md:py-20 bg-gray-50 dark:bg-gray-800"
+    >
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10 sm:mb-12 md:mb-16">
@@ -86,7 +91,7 @@ const Experience: React.FC = () => {
 
                   {/* Content */}
                   <div className="flex-1 bg-white dark:bg-gray-900 p-5 sm:p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                    <div className="flex flex-col mb-3 sm:mb-4">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3 sm:mb-4">
                       <div>
                         <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-1">
                           {exp.title}
@@ -98,11 +103,15 @@ const Experience: React.FC = () => {
                       <div className="mt-2 sm:mt-3 space-y-1">
                         <div className="flex items-center text-gray-600 dark:text-gray-300">
                           <FiCalendar className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                          <span className="text-xs sm:text-sm ml-2">{exp.period}</span>
+                          <span className="text-xs sm:text-sm ml-2">
+                            {exp.period}
+                          </span>
                         </div>
                         <div className="flex items-center text-gray-600 dark:text-gray-300">
                           <FiMapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                          <span className="text-xs sm:text-sm ml-2">{exp.location}</span>
+                          <span className="text-xs sm:text-sm ml-2">
+                            {exp.location}
+                          </span>
                         </div>
                       </div>
                     </div>
